@@ -1,4 +1,4 @@
-export class Carrinho {
+class Carrinho {
     constructor(user, itens = []) {
         this.user = user;
         this.itens = itens;
@@ -8,3 +8,5 @@ export class Carrinho {
         return this.itens.reduce((total, item) => total + item.preco, 0);
     }
 }
+
+module.exports = { Carrinho };

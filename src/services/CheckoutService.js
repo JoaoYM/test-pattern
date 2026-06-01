@@ -1,6 +1,6 @@
-import { Pedido } from '../domain/Pedido.js';
+const { Pedido } = require('../domain/Pedido.js');
 
-export class CheckoutService {
+class CheckoutService {
     
     // Injeção de Dependência via construtor
     constructor(gateway, repository, emailSvc) {
@@ -47,3 +47,5 @@ export class CheckoutService {
         return pedidoSalvo;
     }
 }
+
+module.exports = { CheckoutService };

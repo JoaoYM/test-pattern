@@ -1,4 +1,4 @@
-export class User {
+class User {
     constructor(id, nome, email, tipo = 'PADRAO') {
         this.id = id;
         this.nome = nome;
@@ -10,3 +10,5 @@ export class User {
         return this.tipo === 'PREMIUM';
     }
 }
+
+module.exports = { User };

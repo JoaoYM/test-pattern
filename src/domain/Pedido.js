@@ -1,4 +1,4 @@
-export class Pedido {
+class Pedido {
     constructor(id, carrinho, totalFinal, status) {
         this.id = id;
         this.carrinho = carrinho;
@@ -6,3 +6,5 @@ export class Pedido {
         this.status = status; // 'PROCESSADO' ou 'FALHOU'
     }
 }
+
+module.exports = { Pedido };
